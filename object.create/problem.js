@@ -13,3 +13,4 @@ var grandChild = Object.create(child);
 console.log(parent.get());
 console.log(child.get());
 console.log(grandChild.get());
+
