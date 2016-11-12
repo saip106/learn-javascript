@@ -1,0 +1,38 @@
+A function can refer to, or have access to –
+    - any variables and parameters in its own function scope
+    - any variables and parameters of outer (parent) functions
+    - any variables from the global scope.
+
+IIFE - Immedietly Invoked Function Expressions
+-----------------------------------------------
+// variant 1
+
+(function () {
+  alert('Woohoo!');
+})();
+
+// variant 2
+
+(function () {
+  alert('Woohoo!');
+}());
+
+Different ways of creating closures
+------------------------------------
+example1 = function(x) {
+var myvar1 = x;
+return function() {return myvar1;};
+}
+
+var aa;
+example2 = function(y) {
+var myvar2 = y;
+aa = function() {return myvar2;};
+}
+
+example3 = function(z) {
+var bb, myvar3;
+bb = function() {return myvar3;};
+myvar3 = z;
+return bb;
+}
