@@ -5,7 +5,7 @@ function logFactory(name) {
 }
 
 function printWithDelay(people){
-    for (var index = 0; index < people.length; index++) {
+    for (index = 0; index < people.length; index++) {
         setTimeout(logFactory(people[index]) , 1000);
     }
 }
