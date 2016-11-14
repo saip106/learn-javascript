@@ -14,3 +14,5 @@ console.log(parent.get());
 console.log(child.get());
 console.log(grandChild.get());
 
+//what will be the output in each case and why
+
