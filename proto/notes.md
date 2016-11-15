@@ -10,4 +10,10 @@ console.log(foo.prototype);
 foo.__proto__
 Object.getPrototypeOf(foo); 
 Object.setPrototypeOf(foo, null); 
-~~~~ 
+~~~~
+
+Bonus points
+what happens when we do the following
+~~~~
+Object.setPrototypeOf(foo, foo);
+~~~~
